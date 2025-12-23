@@ -1,7 +1,5 @@
 # 🤖 Intelligent Multi-Source RAG Orchestrator
 
-<div align="center">
-
 ![System Architecture](graph.png)
 
 ## 📋 Overview
@@ -200,3 +198,4 @@ If classified as `moxi` or `confer`:
 ├── COOLIFY_DEPLOYMENT.md   # Deployment guide
 └── README.md               # This file
 ```
+

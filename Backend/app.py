@@ -86,6 +86,7 @@ def generate_response(state: GraphState):
         return {"generation": PROMPTS["safety_message"]}
     
     if classification in ["moxi", "confer"] and documents:
+        docs_text = "\n\n".join(documents)
         system_prompt = f"""You are a knowledgeable assistant specializing in {classification.upper()}.
 
 {PROMPTS["personality"]}
@@ -93,7 +94,7 @@ def generate_response(state: GraphState):
 {PROMPTS["rag_principles"]}
 
 Context:
-{"\n\n".join(documents)}"""
+{docs_text}"""
         temperature = 0
     else:
         system_prompt = f"""You are a helpful AI assistant.

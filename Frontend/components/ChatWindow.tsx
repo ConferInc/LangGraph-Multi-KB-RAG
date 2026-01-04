@@ -11,7 +11,7 @@ export default function ChatWindow({ messages, isLoading, onSendMessage }) {
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }
-
+//test
   useEffect(() => {
     scrollToBottom()
   }, [messages, isLoading])

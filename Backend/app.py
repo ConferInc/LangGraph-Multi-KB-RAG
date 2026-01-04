@@ -10,7 +10,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
 from langgraph.graph import StateGraph, END, START
-
+#test
 # Configuration
 load_dotenv()
 
